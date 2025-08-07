@@ -1,0 +1,37 @@
+{
+  "name": "agricultural-supply-chain",
+  "version": "1.0.0",
+  "description": "Blockchain-based Supply Chain Management System for Agricultural Products",
+  "main": "index.js",
+  "scripts": {
+    "compile": "hardhat compile",
+    "test": "hardhat test",
+    "deploy:local": "hardhat run scripts/deploy.js --network localhost",
+    "deploy:goerli": "hardhat run scripts/deploy.js --network goerli",
+    "deploy:mumbai": "hardhat run scripts/deploy.js --network mumbai",
+    "deploy:sepolia": "hardhat run scripts/deploy.js --network sepolia",
+    "verify:goerli": "hardhat verify --network goerli",
+    "verify:mumbai": "hardhat verify --network mumbai",
+    "node": "hardhat node",
+    "clean": "hardhat clean"
+  },
+  "keywords": [
+    "blockchain",
+    "supply-chain",
+    "agriculture",
+    "ethereum",
+    "smart-contracts",
+    "solidity"
+  ],
+  "author": "Agricultural Supply Chain Team",
+  "license": "MIT",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^4.0.0",
+    "@openzeppelin/contracts": "^4.9.3",
+    "hardhat": "^2.19.0",
+    "dotenv": "^16.3.1"
+  },
+  "dependencies": {
+    "ethers": "^6.8.0"
+  }
+}
